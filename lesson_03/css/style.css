@@ -1,0 +1,45 @@
+@import url("reset.css");
+
+h1 {
+    color: brown;
+}
+
+.header {
+    color: red;
+}
+
+#text-mini-header {
+    color: rgb(109, 26, 98);
+}
+
+[class*="acc"] {
+    color: rgb(122, 15, 244);
+}
+
+.accent.borsh {
+    color: rgb(209, 48, 123);
+}
+
+p.facts {
+    color: aqua;
+}
+
+.text-block-2 p {
+    color: rgb(175, 185, 32);
+}
+
+.unsorted-list .item {
+    color: blue;
+}
+
+.text-block-3>p {
+    color: rgb(224, 23, 194);
+}
+
+.music-facts-wrapper~p {
+    color: rgb(32, 237, 17);
+}
+
+.little-known-facts-wrapper+p {
+    color: chocolate;
+}
