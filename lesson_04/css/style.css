@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:regular,600&display=swap");
+
+@import url('fonts.css');
+@import url("reset.css");
+
+body {
+    font-family: "Cormorant", serif;
+    font-size: 20px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.sample-1 {
+    color: #0000ff;
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.sample-2 {
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 0, 0, 0.82);
+}
+
+.sample-3 {
+    text-align: right;
+    text-decoration: line-through green;
+
+}
+
+.sample-4 {
+    text-decoration: blue dashed overline;
+}
+
+.sample-5 {
+    text-transform: capitalize;
+    text-shadow: 6px 2px 3px orangered;
+}
+
+.sample-6 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.sample-7 {
+    font-size: 25px;
+    line-height: 1.5;
+    word-spacing: 10px;
+}
+
+.personal-portfolio-block {
+    font-family: "Work Sans", sans-serif;
+}
+
+.personal-portfolio-header {
+    color: #132238;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.32;
+    /* 50/38 */
+}
+
+.personal-portfolio-text {
+    color: #556070;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33;
+    /* 24/18 */
+}
+
+.business-presentation-block {
+    font-family: "DM Sans", sans-serif;
+}
+
+.business-presentation-header {
+    color: #1E1B39;
+    font-size: 88px;
+    font-weight: 700;
+    line-height: 1.08;
+    /* 95/88 */
+}
+
+.business-presentation-text {
+    color: #474464;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.75;
+    /* 42/24 */
+}
+
+.landing-page-block {
+    font-family: "Roboto", sans-serif;
+}
+
+.landing-page-header {
+    color: #091133;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.32;
+    /* 66/50 */
+    letter-spacing: 1px;
+}
+
+p.landing-page-text {
+    color: #505F98;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.67;
+    /* 30/18 */
+}
+
+.footer p {
+    text-align: right;
+}
