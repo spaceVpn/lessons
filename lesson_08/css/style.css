@@ -1,0 +1,58 @@
+@import url('fonts.css');
+@import url("reset.css");
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    padding-inline: 15px;
+    padding-block: 20px;
+    margin: 0 auto;
+    background-color: #70dea3;
+}
+
+.header {
+    padding-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.footer p {
+    text-align: center;
+    font-weight: 500;
+    padding-block: 20px;
+}
+
+p:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+span {
+    padding-left: 25px;
+}
+
+picture {
+    max-width: 1170px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+img.size {
+    min-width: 45px;
+}
+
+img.star-size {
+    max-width: 55px;
+}
