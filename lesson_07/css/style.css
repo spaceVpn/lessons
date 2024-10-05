@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,700&display=swap");
+@import url('fonts.css');
+@import url("reset.css");
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.header {
+    padding-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.footer p {
+    text-align: center;
+    font-weight: 500;
+    padding-block: 20px;
+}
+
+/* Pricing plans */
+
+.pricing-plans {
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 50px;
+}
+
+.pricing-plans .container {
+    max-width: 1000px;
+    padding-inline: 15px;
+    margin: 0 auto;
+}
+
+.pricing-plans-card-box {
+    max-width: 543px;
+    min-height: 617px;
+    background-color: #F0F0F6;
+    border-radius: 56px;
+    margin: 0 auto;
+    padding-inline: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 58px;
+}
+
+.pricing-plans-amount {
+    max-width: 495px;
+    min-height: 271px;
+    background-color: #4A3AFF;
+    border-radius: 34px;
+    padding-block: 45px;
+    margin-bottom: 34px;
+}
+
+.pricing-plans-subtitle {
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 2px;
+    opacity: 0.9;
+
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.07;
+    /* 32/30 */
+}
+
+.pricing-plans-price {
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 6px;
+
+    font-size: 116px;
+    font-weight: 700;
+    line-height: 1.03;
+    /* 103.448% */
+}
+
+.pricing-plans-billing {
+    color: #FFF;
+    text-align: center;
+    opacity: 0.6;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1;
+    /* 22/20 */
+
+}
+
+.pricing-plans-list {
+    margin-left: 12px;
+}
+
+.pricing-plans-item {
+    color: #1E1B39;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.36;
+    /* 38/28 */
+}
+
+.pricing-plans-list li::before {
+    content: "";
+    background: url("../img/check_icon.svg") center / 36px no-repeat;
+    width: 36px;
+    height: 36px;
+    margin-right: 14px;
+    vertical-align: top;
+}
+
+.pricing-plans-list li:not(:last-child) {
+    margin-bottom: 26px;
+}
+
+/* Timeline */
+
+.timline {
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 50px;
+}
+
+.timline .container {
+    max-width: 660px;
+    padding-inline: 15px;
+    margin: 0 auto;
+}
+
+.timline-item {
+    max-width: 629.692px;
+}
+
+.timeline-item:not(:last-child) {
+    margin-bottom: 54px;
+}
+
+.timeline-item>*:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.timeline-date {
+    color: #4A3AFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1;
+    /* 22/20 */
+}
+
+.timeline-title {
+    color: #1E1B39;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.29;
+    /* 54/42 */
+}
+
+.timeline-title::after {
+    content: "";
+    width: 43px;
+    height: 43px;
+    margin-left: 8px;
+}
+
+.timeline-item:nth-child(1) h2::after {
+    background: url("../img/loupe.png") 0 0 / 43px no-repeat;
+}
+
+.timeline-item:nth-child(2) h2::after {
+    background: url("../img/laptop.png") 0 0 / 43px no-repeat;
+}
+
+.timeline-item:nth-child(3) h2::after {
+    background: url("../img/rocket.png") 0 0 / 43px no-repeat;
+}
+
+.timeline-text {
+    color: #6E6C83;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.75;
+    /* 42/24 */
+}
+
+/* Agency */
+
+.agency {
+    font-family: "Epilogue", sans-serif;
+    background-color: #FDF0E9;
+    padding-block: 25px;
+    margin-bottom: 50px;
+}
+
+.agency .container {
+    max-width: 1000px;
+    padding-inline: 15px;
+    margin: 0 auto;
+}
+
+.agency-pic-box {
+    max-width: 970px;
+    margin-bottom: 74px;
+}
+
+.agency-img-intro {
+    width: 100%;
+}
+
+.agency-text-box {
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.agency p {
+    color: rgba(57, 20, 0, 0.64);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+    /* 32/16 */
+}
+
+.agency p:nth-of-type(1) {
+    color: #391400;
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+.agency p:nth-of-type(2) {
+    margin-bottom: 51px;
+}
+
+.agency p:nth-of-type(3) {
+    margin-bottom: 34px;
+}
+
+.agency p:nth-of-type(4) {
+    margin-bottom: 65px;
+}
+
+.agency p:nth-of-type(5) {
+    margin-bottom: 28px;
+}
+
+.agency p:nth-of-type(6) {
+    margin-bottom: 69px;
+}
+
+h4.agency-title {
+    color: #391400;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33;
+    /* 32/24 */
+    margin-bottom: 35px;
+}
+
+.agency-list {
+    margin-bottom: 32px;
+}
+
+.agency-list-item {
+    color: #391400;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+    /* 32/16 */
+}
+
+li.item-bullet::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #EF6D58;
+    border-radius: 50%;
+    margin-inline-end: 16px;
+}
+
+.quoute-box {
+    max-width: 570px;
+    min-height: 176px;
+    background: #F9E5DA url('../img/quotes.svg') 32px 40px / 48px no-repeat;
+    border-radius: 6px;
+    padding-inline-start: 112px;
+    padding-inline-end: 32px;
+    padding-block-start: 42px;
+    padding-block-end: 32px;
+    margin-bottom: 76px;
+}
+
+.agency p.quoute-text {
+    max-width: 426px;
+    margin-bottom: 0;
+    line-height: 1.6;
+    /* 32/20 */
+}
+
+/* Game */
+
+.game .container {
+    background-color: crimson;
+    background: url("../img/digital-art.jpg") 0 0 / 800px no-repeat;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.game-bg {
+    background-color: #fff;
+}
+
+.game-1-1 {
+    padding: 5px;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(15, 199, 104);
+}
+
+.game-1-2-h {
+    width: 300px;
+    height: 25px;
+    margin-top: -25px;
+    margin-left: 65px;
+    visibility: hidden;
+    background-color: rgb(15, 199, 104);
+}
+
+.game-1-3-v {
+    width: 25px;
+    height: 100px;
+    margin-left: 340px;
+    visibility: hidden;
+}
+
+.game-1-4-h {
+    width: 250px;
+    height: 25px;
+    margin-left: 115px;
+    margin-top: -25px;
+    visibility: hidden;
+    background-color: rgb(15, 199, 104);
+}
+
+.game-1-5-v {
+    width: 25px;
+    height: 200px;
+    margin-left: 110px;
+    margin-top: -25px;
+    visibility: hidden;
+}
+
+.game-1-6-h {
+    width: 450px;
+    height: 25px;
+    margin-left: 110px;
+    margin-top: -25px;
+    visibility: hidden;
+    background-color: rgb(15, 199, 104);
+}
+
+.game-1-7-v {
+    width: 25px;
+    height: 150px;
+    margin-left: 535px;
+    margin-top: -25px;
+    visibility: hidden;
+}
+
+.game-1-8-h {
+    width: 450px;
+    height: 25px;
+    margin-left: 110px;
+    margin-top: -25px;
+    visibility: hidden;
+    background-color: rgb(15, 199, 104);
+}
+
+.game-1-9-v {
+    width: 25px;
+    height: 70px;
+    margin-left: 110px;
+    margin-top: -25px;
+    visibility: hidden;
+}
+
+.game-1-10-h {
+    width: 550px;
+    height: 25px;
+    margin-left: 110px;
+    margin-top: -25px;
+    visibility: hidden;
+    background-color: rgb(15, 199, 104);
+}
+
+.game-1-11-v {
+    width: 25px;
+    height: 70px;
+    margin-left: 635px;
+    margin-top: -25px;
+    visibility: hidden;
+}
+
+.game-1-12 {
+    width: 76px;
+    height: 45px;
+    margin-left: 615px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(15, 199, 104);
+    visibility: hidden;
+}
+
+.game-1-1:hover+.game-1-2-h,
+.game-1-2-h:hover {
+    visibility: visible;
+}
+
+.game-1-2-h:hover+.game-1-3-v,
+.game-1-3-v:hover {
+    visibility: visible;
+}
+
+.game-1-3-v:hover+.game-1-4-h,
+.game-1-4-h:hover {
+    visibility: visible;
+}
+
+.game-1-4-h:hover+.game-1-5-v,
+.game-1-5-v:hover {
+    visibility: visible;
+}
+
+.game-1-5-v:hover+.game-1-6-h,
+.game-1-6-h:hover {
+    visibility: visible;
+}
+
+.game-1-6-h:hover+.game-1-7-v,
+.game-1-7-v:hover {
+    visibility: visible;
+}
+
+.game-1-7-v:hover+.game-1-8-h,
+.game-1-8-h:hover {
+    visibility: visible;
+}
+
+.game-1-8-h:hover+.game-1-9-v,
+.game-1-9-v:hover {
+    visibility: visible;
+}
+
+.game-1-9-v:hover+.game-1-10-h,
+.game-1-10-h:hover {
+    visibility: visible;
+}
+
+.game-1-10-h:hover+.game-1-11-v,
+.game-1-11-v:hover {
+    visibility: visible;
+}
+
+.game-1-11-v:hover+.game-1-12,
+.game-1-12:hover {
+    visibility: visible;
+}
