@@ -1,0 +1,26 @@
+@import url('fonts.css');
+@import url("reset.css");
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.header {
+    padding-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.footer__text p {
+    text-align: center;
+    font-weight: 500;
+    padding-block: 20px;
+}
