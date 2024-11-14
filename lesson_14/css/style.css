@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:regular&display=swap");
+
+@import url('fonts.css');
+@import url("reset.css");
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+}
+
+[class*="__container"] {
+    max-width: 1200px;
+    padding-inline: 15px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.header {
+    padding-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.footer__text p {
+    text-align: center;
+    font-weight: 500;
+    padding-block: 20px;
+}
+
+.contact {
+    background-color: rgba(230, 232, 235, 1);
+    font-family: "Work Sans",
+        sans-serif;
+}
+
+.contact__container {
+    padding: 80px;
+}
+
+.contact__box {
+    background-color: #FFF;
+    max-width: 560px;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 0px 59px 124px 0px rgba(0, 0, 0, 0.12);
+}
+
+.contact__text {
+    margin-bottom: 50px;
+    color: #87909D;
+    font-size: 18px;
+    line-height: 1.33;
+    /* 24/18 */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form__input {
+    color: #697484;
+    font-size: 18px;
+    line-height: 1.33;
+    /* 24/18 */
+    border-bottom: 1.5px solid #E6E8EB;
+    padding-bottom: 14px;
+}
+
+.form__input:focus {
+    color: #A53DFF;
+    outline: none;
+    border-bottom: 1.5px solid #A53DFF;
+}
+
+.form__input:focus::placeholder {
+    color: #A53DFF;
+    opacity: 1;
+}
+
+.form__line-double {
+    display: flex;
+    gap: 24px;
+}
+
+.form__line-double .form__input:first-child:not(:last-child) {
+    flex-basis: 200px;
+}
+
+textarea.form__input {
+    min-height: 48px;
+    resize: vertical;
+}
+
+.form__input--mb {
+    margin-bottom: 26px;
+    padding-bottom: 0;
+}
+
+.form__button {
+    display: flex;
+    align-self: flex-start;
+    gap: 12px;
+    background: #A53DFF;
+    border-radius: 4px;
+    padding: 12px 24px;
+
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    /* 24/16 */
+    transition: all 0.3s;
+}
+
+.form__button:active {
+    transform: scale(0.95);
+}
+
+.form__img {
+    width: 24px;
+    height: 24px;
+    max-width: 100%;
+}
+
+
+/* Dark Form */
+
+.support {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    padding-block: 80px;
+}
+
+.support__container {
+    max-width: 976px;
+    padding: 50px;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    background: #0F0F0F;
+}
+
+.form-support {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.form-support__item {
+    flex-basis: 47%;
+    flex-grow: 1;
+}
+
+.form-support__label {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #FFF;
+    font-weight: 600;
+    line-height: 1.5;
+    /* 27/18 */
+}
+
+.form-support__input {
+    color: #999;
+    line-height: 1.5;
+    /* 27/18 */
+
+    padding: 20px;
+    border-radius: 8px;
+    background: #141414;
+    border: 1px solid #262626;
+}
+
+.form-support__item--max-width {
+    flex-basis: 100%;
+}
+
+textarea.form-support__input {
+    min-height: 163px;
+    resize: vertical;
+}
+
+.form-support__item--flex {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px 70px;
+    flex-wrap: wrap;
+}
+
+.form-support__box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-support__checkbox {
+    width: 0;
+    appearance: none;
+}
+
+.form-support__label--checkbox {
+    margin-bottom: 0;
+    color: #999;
+    font-weight: 400;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-support__label--checkbox::before {
+    content: "";
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    border: 1px solid #262626;
+}
+
+.form-support__checkbox:checked+.form-support__label--checkbox::before {
+    background: url("../img/check_icon.svg") center / contain no-repeat;
+}
+
+.form-support__checkbox:focus-visible+.form-support__label--checkbox::before {
+    outline: 2px solid #FFF;
+    border-radius: 5px;
+}
+
+.form-support__button {
+    background: #E50000;
+    border-radius: 8px;
+    padding: 18px 24px;
+
+    color: #FFF;
+    font-weight: 600;
+    line-height: 1.5;
+    /* 27/18 */
+    transition: all 0.3s;
+}
+
+.form-support__button:active {
+    transform: scale(0.95);
+}
