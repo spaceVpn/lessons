@@ -32,6 +32,17 @@ body {
     margin-bottom: 10px;
 }
 
+.header__link {
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+
+@media (any-hover:hover) {
+    .header__link:hover {
+        color: #E50000;
+    }
+}
+
 .footer__text p {
     color: #fff;
     text-align: center;
