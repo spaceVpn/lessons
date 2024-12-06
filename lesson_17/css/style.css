@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,700,800,900&display=swap");
+@import url('fonts.css');
+@import url("reset.css");
+
+body {
+    font-family: "Epilogue", sans-serif;
+    background: #28293E;
+}
+
+[class*="__container"] {
+    max-width: 1200px;
+    padding-inline: 15px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.header {
+    padding: 25px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.header a {
+    display: block;
+    color: #FFF;
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+.footer__text p {
+    color: #FFF;
+    text-align: center;
+    font-weight: 500;
+    padding-block: 20px;
+}
+
+
+/* Section Header Block */
+.section-header {
+    max-width: 530px;
+}
+
+.section-header__label {
+    color: #EF6D58;
+    line-height: 2;
+    /* 32/16 */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.section-header__title {
+    color: #FFF;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.14;
+    /* 64/56 */
+    letter-spacing: -1px;
+    text-transform: capitalize;
+}
+
+.section-header--center {
+    margin-inline: auto;
+    text-align: center;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding-bottom: 96px;
+}
+
+.portfolio__header {
+    margin-bottom: 36px;
+}
+
+.portfolio__select-menu {
+    display: none;
+    padding-inline: 16px;
+    width: 100%;
+    min-height: 48px;
+    border-radius: 6px;
+    background: #FFF;
+    margin-bottom: 48px;
+
+
+    font-family: Epilogue;
+    font-size: 16px;
+    line-height: 32px;
+    /* 200% */
+}
+
+.portfolio__menu {
+    margin-bottom: 68px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.menu__link {
+    color: rgba(255, 255, 255, 0.64);
+    font-size: 16px;
+    line-height: 2;
+    /* 32/16 */
+    transition: all 0.3s;
+}
+
+.portfolio sup {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.64);
+    font-size: 14px;
+    line-height: 1.71;
+    transform: translateY(-7px);
+    /* 24/14 */
+}
+
+.portfolio__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 64px;
+}
+
+.card {
+    flex-basis: 470px;
+    min-height: 416px;
+    position: relative;
+    padding: 51px 48px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card:nth-child(4n+2),
+.card:nth-child(4n+3) {
+    flex-basis: 670px;
+}
+
+.card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.card__content {
+    position: relative;
+    z-index: 2;
+}
+
+.card__category {
+    width: fit-content;
+    padding: 5px 16px;
+    margin-bottom: 24px;
+    border-radius: 19px;
+    line-height: 2;
+    /* 32/16 */
+    color: #391400;
+    background-color: #FFF;
+    font-size: 16px;
+}
+
+.card__title {
+    color: #FFF;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+    /* 48/40 */
+}
+
+.portfolio__btn {
+    text-align: center;
+}
+
+.button {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    padding: 18px 30px;
+    transition: all 0.3s;
+}
+
+/* @media */
+
+@media (any-hover:hover) {
+
+    .menu__link:hover,
+    header a:hover {
+        color: #FFF;
+        text-decoration: coral underline;
+    }
+
+    .button:hover {
+        background-color: #EF6D58;
+    }
+
+    .card__image:hover {
+        opacity: 1.0;
+    }
+}
+
+
+@media (max-width:1216px) {
+
+    .card:nth-child(4n+2),
+    .card:nth-child(4n+3) {
+        flex: 0 1 calc(100% / 2 - ((30px * 1) / 2));
+    }
+
+    .portfolio__item {
+        flex: 0 1 calc(100% / 2 - ((30px * 1) / 2));
+    }
+
+}
+
+@media (max-width: 768px) {
+    .section-header__title {
+        font-size: 37px;
+        line-height: 1.2;
+        /* 48/40 */
+    }
+}
+
+@media (max-width:668px) {
+
+    .menu {
+        display: none;
+    }
+
+    .portfolio__select-menu {
+        display: inline-block;
+    }
+
+    .card:nth-child(4n+2),
+    .card:nth-child(4n+3),
+    .portfolio__item {
+        flex: 0 1 100%;
+    }
+
+}
+
+@media (max-width:340px) {
+    .card {
+        padding: 51px 28px;
+    }
+}
