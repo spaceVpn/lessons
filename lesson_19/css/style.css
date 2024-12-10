@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap");
+@import url('fonts.css');
+@import url("reset.css");
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-size: 25px;
+}
+
+[class*="__container"] {
+    max-width: 1498px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.homework__link {
+    display: block;
+    color: #0000ff;
+    text-decoration: underline;
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+@media (any-hover:hover) {
+    .homework__link:hover {
+        text-decoration-color: red;
+    }
+}
